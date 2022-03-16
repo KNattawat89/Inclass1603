@@ -1,0 +1,23 @@
+.jumbotron{
+    background: #9575CD;
+    color: floralwhite;
+    border-radius: 5px;
+}
+
+.footer{
+    background-color: #D1C4E9;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 567px) {
+    .jumbotron > .container {
+      padding: 50px;
+      font-weight: 500;
+    }
+    .jumbotron h1 {
+      font-size: 40px;
+    }
+  }
