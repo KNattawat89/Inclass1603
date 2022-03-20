@@ -1,19 +1,19 @@
 .row-header{
-    padding: 0px auto;
-    margin: 0px auto;
+    margin:0px auto;
+    padding:0px;
 }
 
-.row-content{
-    margin-left: 5px;
+.row-content {
+    margin:0px auto;
     padding: 50px 0px 50px 0px;
-    /* border-bottom: 1px ridge; */
-    min-height: 300px;
+    border-bottom: 1px ridge;
+    min-height:400px;
 }
 
 .footer{
-   margin: 0px auto;
-   padding: 20px 0px 20px 0px;
-   background-color: #D1C4E9;
+    background-color: #D1C4E9;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
 }
 
 .footer , a{
@@ -27,5 +27,24 @@
     border-radius: 7px;
 }
 
-  
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+
+.navbar-dark {
+     background-color: #512DA8;
+}
+
+@media screen and (max-width: 567px) {
+    .jumbotron > .container {
+      padding: 50px;
+      font-weight: 500;
+    }
+    .jumbotron h1 {
+      font-size: 40px;
+    }
+  }
+
+
 
