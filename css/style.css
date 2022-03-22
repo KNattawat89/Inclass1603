@@ -37,6 +37,10 @@ body{
    background-color: #512DA8;
 }
 
+/* .jumbotron button{
+  padding: auto 30px;
+} */
+
 @media screen and (max-width: 567px) {
     .jumbotron > .container {
       padding: 50px;
