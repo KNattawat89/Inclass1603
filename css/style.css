@@ -37,9 +37,12 @@ body{
    background-color: #512DA8;
 }
 
-/* .jumbotron button{
-  padding: auto 30px;
-} */
+.tab-content{
+  border-left: 1px solid #ddd ;
+  border-right: 1px solid #ddd ;
+  border-bottom: 1px solid #ddd ;
+  padding: 10px;
+}
 
 @media screen and (max-width: 567px) {
     .jumbotron > .container {
