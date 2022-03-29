@@ -4,7 +4,14 @@
   "description": "\"This is the work\"",
   "main": "index (orig).html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imaginmin": "imagemin img/* -o dist/img"
   },
   "repository": {
     "type": "git",
@@ -18,6 +25,12 @@
   "homepage": "https://github.com/KNattawat89/Inclass1603#readme",
   "dependencies": {
     "bootstrap-social": "^5.1.1",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "node-sass": "^7.0.1"
+  },
+  "devDependencies": {
+    "onchange": "^3.3.0",
+    "parallelshell": "^3.0.2",
+    "rimraf": "^2.6.2"
   }
 }
